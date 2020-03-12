@@ -20,22 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::prefix('welcome')->group(function () {
-
-Route::get('schools', 'WelcomeController@schools')->name('schools');
-Route::get('school-create', 'WelcomeController@schoolCreate')->name('school.create');
-Route::post('school-create', 'WelcomeController@schoolPost')->name('school.post');
-Route::get('school-edit/{school}', 'WelcomeController@schoolEdit')->name('school.edit');
-Route::put('school-update/{school}', 'WelcomeController@schoolUpdate')->name('school.update');
-Route::get('delete-school/{school}', 'WelcomeController@SchoolDelete')->name('school.delete');
-//Route::delete('delete-school/{school}', 'WelcomeController@schoolDelete')->name('school.delete');
-
-
-
-
-
-
-});
 
 
 
